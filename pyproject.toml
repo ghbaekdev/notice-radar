@@ -1,0 +1,33 @@
+[project]
+name = "rag-agent"
+version = "0.1.0"
+description = "RAG chatbot with LangGraph Platform"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "ruff>=0.4.0",
+    "ragas>=0.2.0",
+]
+
+[tool.uv.workspace]
+members = ["apps/*", "packages/*"]
+
+[tool.uv.sources]
+rag-core = { workspace = true }
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+src = ["apps/*/src", "packages/*/src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "B", "A", "C4", "UP", "SIM", "RUF"]
+ignore = ["E501", "E402", "B904", "B008"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
