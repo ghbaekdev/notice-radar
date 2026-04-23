@@ -2,7 +2,7 @@
 
 ## 앱 구조
 
-**파일**: `apps/api/src/api/webapp.py`
+**파일**: `apps/api/src/webapp.py`
 
 - FastAPI 앱 생성
 - lifespan에서 DB 풀 초기화/정리
@@ -13,17 +13,11 @@
 
 | 라우터 | Prefix | 설명 |
 |--------|--------|------|
-| `document` | `/documents` | 업로드, 파싱, 검색, 재인덱싱, 삭제 |
-| `auth` | `/auth` | 회원가입, 로그인, 토큰 갱신 |
-| `settings` | `/settings` | 임베드 설정 조회/수정 |
-| `faq` | `/faqs` | FAQ CRUD |
-| `conversation` | `/conversations` | 대화 조회/삭제 |
-| `api_config` | `/api-configs` | 외부 API 설정 |
-| `lead` | `/leads` | 리드 수집 설정/조회 |
+| `document` | `/documents` | 업로드, 파싱, 검색, 목록, 재인덱싱, 삭제 |
 
 ## 인증
 
-- `get_current_company()`가 대부분의 라우터에서 사용되는 핵심 의존성
+- `get_current_company()`가 `document` 라우터에서 사용하는 핵심 의존성
 - Bearer JWT를 해석해 회사 정보를 반환
 - 실패 시 `HTTPException(401)`
 

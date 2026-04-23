@@ -7,7 +7,7 @@
 | 패키지 | 역할 |
 |--------|------|
 | `packages/core` | 공유 로직: DB, 검색, 인증, 설정 |
-| `apps/api` | FastAPI 문서/설정/FAQ/대화 API |
+| `apps/api` | FastAPI 문서 파싱/검색 API |
 | `apps/graph` | LangGraph 기반 RAG 챗봇 런타임 및 단일-agent 레지스트리 |
 
 ## 그래프 플로우
@@ -27,7 +27,7 @@ START → router → agent_generate → (agent_tools or filter_output) → END
 - 회사별 문서/FAQ/대화 데이터 분리
 - PDF 파싱, 청킹, 임베딩, Qdrant 인덱싱
 - LangGraph 기반 단일-agent RAG 응답
-- FastAPI 기반 관리/인증/설정 API
+- FastAPI 기반 문서 업로드/검색 API
 
 ## 실행
 

@@ -61,7 +61,7 @@ langgraph dev
 ```
 
 - `http://localhost:2024`
-- `langgraph.json`의 `graph.graph:graph` 엔트리포인트 사용
+- `langgraph.json`의 `graph:graph` 엔트리포인트 사용
 
 ### FastAPI
 

@@ -4,16 +4,16 @@ This file provides guidance for work in `/Users/tom/Desktop/projects/notice-rada
 
 ## Focus
 
-- FastAPI server only.
-- Routers live under `src/api/routers`.
-- Application setup lives in `src/api/webapp.py`.
-- Auth/dependency wiring lives in `src/api/dependencies.py`.
+- FastAPI document API only.
+- Routers live under `src/routers`.
+- Application setup lives in `src/webapp.py`.
+- Auth dependency wiring lives in `src/dependencies.py`.
 
 ## Package Structure
 
 ```text
 apps/api/
-├── src/api/
+├── src/
 │   ├── webapp.py
 │   ├── dependencies.py
 │   └── routers/

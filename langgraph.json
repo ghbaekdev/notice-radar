@@ -1,7 +1,7 @@
 {
   "$schema": "https://langchain-ai.github.io/langgraph/langgraph.schema.json",
   "graphs": {
-    "rag_agent": "graph.graph:graph"
+    "rag_agent": "graph:graph"
   },
   "env": "apps/graph/.env",
   "python_version": "3.13",

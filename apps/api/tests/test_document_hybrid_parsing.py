@@ -1,6 +1,6 @@
 import unittest
 
-from api.routers import document as document_router
+from routers import document as document_router
 
 
 class DocumentHybridParsingTest(unittest.TestCase):

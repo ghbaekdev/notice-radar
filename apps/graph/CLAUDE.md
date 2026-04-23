@@ -11,7 +11,7 @@ This file provides guidance for work in `/Users/tom/Desktop/projects/notice-rada
 
 ```text
 apps/graph/
-├── src/graph/
+├── src/
 │   ├── graph.py
 │   ├── state.py
 │   ├── prompts.py

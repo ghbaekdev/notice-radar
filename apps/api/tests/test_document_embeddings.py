@@ -2,7 +2,7 @@ import unittest
 from types import SimpleNamespace
 from unittest.mock import MagicMock, patch
 
-from api.routers import document as document_router
+from routers import document as document_router
 
 
 class DocumentEmbeddingsTest(unittest.TestCase):

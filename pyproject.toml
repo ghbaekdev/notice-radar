@@ -14,7 +14,7 @@ dev = [
 ]
 
 [tool.uv.workspace]
-members = ["apps/*", "packages/*"]
+members = ["apps/api", "apps/graph", "packages/*"]
 
 [tool.uv.sources]
 rag-core = { workspace = true }

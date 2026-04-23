@@ -7,14 +7,14 @@ notice-radar/
 ├── apps/
 │   ├── api/
 │   │   ├── docs/
-│   │   ├── src/api/
+│   │   ├── src/
 │   │   │   ├── routers/
 │   │   │   ├── dependencies.py
 │   │   │   └── webapp.py
 │   │   └── tests/
 │   └── graph/
 │       ├── docs/
-│       ├── src/graph/
+│       ├── src/
 │       │   ├── nodes/
 │       │   ├── registry.py
 │       │   ├── tools/
@@ -42,7 +42,7 @@ notice-radar/
 
 - 단일 `info_agent` 기반 RAG 챗봇 런타임
 - `langgraph dev`로 실행
-- 그래프는 `apps/graph/src/graph/graph.py`에 정의
+- 그래프는 `apps/graph/src/graph.py`에 정의
 
 ### 2. FastAPI 서버
 
@@ -72,8 +72,8 @@ Frontend / Embed
 Client
     │
     └─→ FastAPI
-            ├─→ auth / settings / faq / conversations / api_config / lead
             ├─→ document parsing + indexing
+            ├─→ document search / list / delete
             ├─→ PostgreSQL
             ├─→ Qdrant
             └─→ S3 parsed-file cache

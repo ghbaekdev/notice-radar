@@ -2,7 +2,7 @@
 
 ## 시스템 프롬프트
 
-Source: `apps/graph/src/graph/prompts.py`
+Source: `apps/graph/src/prompts.py`
 
 - 문서/FAQ 기반으로만 답변
 - 일반 잡담이 아니면 `retrieve` 우선 사용
@@ -12,7 +12,7 @@ Source: `apps/graph/src/graph/prompts.py`
 
 ## 기본 에이전트
 
-Source: `apps/graph/src/graph/registry.py`
+Source: `apps/graph/src/registry.py`
 
 | 설정 | 값 |
 |------|----|

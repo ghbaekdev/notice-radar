@@ -7,7 +7,7 @@ load_app_env("api")
 
 if __name__ == "__main__":
     uvicorn.run(
-        "api.webapp:app",
+        "webapp:app",
         host="0.0.0.0",
         port=5303,
         reload=True,

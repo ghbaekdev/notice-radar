@@ -3,8 +3,8 @@ from unittest.mock import AsyncMock, patch
 
 from langchain_core.messages import AIMessage, ToolMessage
 
-from graph.nodes.agent_tools import agent_tools
-from graph.state import AgentState
+from nodes.agent_tools import agent_tools
+from state import AgentState
 
 
 class AgentToolsTest(IsolatedAsyncioTestCase):
@@ -26,7 +26,7 @@ class AgentToolsTest(IsolatedAsyncioTestCase):
         config = {"configurable": {}}
 
         with patch(
-            "graph.tools.retrieve.retrieve_documents",
+            "tools.retrieve.retrieve_documents",
             AsyncMock(
                 return_value={
                     "documents": ["doc-1"],

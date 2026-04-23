@@ -1,7 +1,7 @@
 from unittest import IsolatedAsyncioTestCase
 
-from graph.nodes.router import router
-from graph.state import AgentState
+from nodes.router import router
+from state import AgentState
 
 
 class RouterTest(IsolatedAsyncioTestCase):
